@@ -20,10 +20,28 @@
 
 	body {
 	background-color: #000;
+	height: 100%;
 	color: #fff;
 	font-family:"Century Gothic", "Futura", "Avenir", "Helvetica",sans-serif;
 	text-align: center;
 	}
+
+#video {
+  position: fixed;
+  top: 50%; left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 415px){
+	#video {
+		left:210%;
+	}
+}
+
 
 	section {
 	height: 100vh;
@@ -34,7 +52,7 @@
 	}
 
 	.text {
-		padding: 1vw;
+	padding: 1vw;
 	width: 100%;
 	position: absolute;
     top: 50%;
@@ -67,8 +85,10 @@
 
 	p{
 	width:100%;
+	max-width: 700px;
 	letter-spacing: 1.2px;
 	margin-top: 7vh;
+	margin:0 auto;
 	font-weight: lighter;
 	}
 
@@ -128,15 +148,21 @@
 	  transition: 0s 0.2s ease-in-out;
 	}
 </style>
+<video autoplay muted loop id="video">
+  <source src="nyc.mp4" type="video/mp4">
+</video>
 <header>
 	  	<h4>joanna<span>kozik</span>.</h4>
 	  	</header>
 	  <section>
 	  	<div class="text">
-	  		<h1>Hello,</h1>
-	  	<h3>I'm an UX/UI designer and front-end developer based in New York City.</h3>
-	  	<p class="credits"> contact me to discuss your project</p>
-	  	<a  data-wipe="Send Email" data-email="asiakozik@gmail.com" href="mailto:asiakozik@gmail.com?subject=Hello" > Send Email</a>
+	  		<h1>Hello.</h1>
+	  	<h3>I'm UX/UI designer and front-end developer based in New York City.</h3>
+	  	<p> My goal is to create easy to use responsive websites and web applications with focus on deep understanding of client's needs.</p>
+	  	<br>
+	  	<br>
+	  	<p class="credits">Contact me to discuss your project.</p>
+	  	<a data-wipe="Send Email" data-email="asiakozik@gmail.com" href="mailto:asiakozik@gmail.com?subject=Hello"> Send Email</a>
 	  	</div>
 	  </section>  	
 	
